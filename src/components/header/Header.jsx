@@ -4,7 +4,7 @@ import "./header.css";
 const Header = () => {
   return (
     <div class="header">
-      header placeholder
+      
 
     </div>
   )
