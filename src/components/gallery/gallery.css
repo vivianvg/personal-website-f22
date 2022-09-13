@@ -1,0 +1,10 @@
+.gallery{
+    grid-column: 3 / 11;
+}
+
+
+.gallery-photo > img{
+    max-width: 20vw;
+    margin: 1vw;
+    
+}

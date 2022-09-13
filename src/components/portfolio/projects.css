@@ -1,0 +1,37 @@
+.projects{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.project-element{
+    grid-column: 3 / 11;
+    text-align: left;
+
+    margin-bottom: 8px;
+
+    padding: 1em;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+/*sub elements of a project element*/
+.date{
+    color: var(--a-s-text);
+}
+
+.project-title{
+    font-weight: bold;
+}
+
+.tech-tag{
+    display: inline-block;
+    font-size: 14px;
+    background: var(--a-text);
+    color: white;
+
+    border-radius:2px;
+    padding: 4px 6px 4px 6px;
+    margin-bottom: 1em;
+}
+

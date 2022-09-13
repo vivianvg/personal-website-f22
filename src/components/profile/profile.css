@@ -1,0 +1,59 @@
+/**/
+.button{
+  padding: 4px 12px 4px 12px;
+  border: solid;
+  border-width: 1.5px;
+}
+
+
+/*GRID FORMATING*/
+.profile{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+
+  grid-column: 3 / 11;
+}
+
+#profile-image{
+  grid-column: 8 / 11;
+  justify-items: start;
+  
+  margin-left: 2em;
+}
+
+#profile-image-element{
+  max-height:50vh;
+  position:relative;
+  top: -30%;
+}
+
+#profile-bio{
+  display:grid;
+  grid-column: 3 / 8;
+  justify-items: start;
+  text-align: left;
+
+}
+
+@media screen and (max-width: 740px) {
+  #profile-bio{
+    grid-column: 3 / 11;
+  }
+  #profile-image{
+    grid-column: 3 / 11;
+  }
+  #profile-image-element{
+    top: -36%;
+    right: -36%;
+    scale: 1;
+  }
+
+
+}
+
+
+
+
+
+

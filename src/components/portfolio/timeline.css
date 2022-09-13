@@ -1,0 +1,49 @@
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+
+}
+
+.timeline-element{
+    grid-column: 3 / 11;
+    margin-bottom: 8px;
+
+    background: var(--a-block-backing);
+    border-radius: 4px;
+
+    text-align: left;
+}
+
+
+.vertical-timeline-element-title{
+    margin: 0;
+    color: var(--a-title);
+}
+
+
+/*Elements of individual timeline elements*/
+.date{
+    font-size: 14px;
+    color: var(--a-s-text);
+
+    margin-bottom: 1vh;
+}
+
+.timeline-element-icon{
+    padding-bottom: 1.5vh;
+    display:inline-block;
+    grid-column: 3 / 4;
+}
+
+.timeline-element-content{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+
+    display:inline-block;
+    grid-column: 4 / 11;
+    text-align:left;
+}
+
