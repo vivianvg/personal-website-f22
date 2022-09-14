@@ -11,30 +11,28 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 10px;
+}
 
+.profile-container{
   grid-column: 3 / 11;
-}
-
-#profile-image{
-  grid-column: 8 / 11;
-  justify-items: start;
-  
-  margin-left: 2em;
-}
-
-#profile-image-element{
-  max-height:50vh;
-  position:relative;
-  top: -30%;
+  grid-auto-flow: row;
 }
 
 #profile-bio{
-  display:grid;
-  grid-column: 3 / 8;
+  display:flex;
   justify-items: start;
   text-align: left;
 
 }
+
+
+#profile-image img{
+  display:flex;
+  max-width: 20vw;
+}
+
+
+
 
 @media screen and (max-width: 740px) {
   #profile-bio{
